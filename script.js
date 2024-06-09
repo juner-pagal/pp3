@@ -17,3 +17,20 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+// Get the Active Link
+const navLinkEls = document.querySelectorAll('.nav-link');
+const windowPathName = window.location.pathname;
+
+navLinkEls.forEach(navLinkEl => {
+  const navLinkPathName = new URL(navLinkEl.href).pathname;
+
+  if((windowPathName === navLinkPathName) || (windowPathName === '/index.html' && navLinkPathName === '/')){
+      navLinkEl.classList.add('active');
+  }
+});
+
+    
+//Designing Footer
+
+
+//---------------------------------
