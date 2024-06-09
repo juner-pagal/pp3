@@ -185,6 +185,19 @@ nav a {
     border-radius: 5px 5px;
     /* margin-top: 5px; */
     /* margin: 5px 5px; */
+    /* display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 5px; */
+}
+.package-box {
+    border-radius: 5px 5px;
+    /* margin-top: 5px; */
+    /* margin: 5px 5px; */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 5px;
 }
 .col-md-4:hover{
     background-color: #eff2f4;
@@ -199,6 +212,9 @@ nav a {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 5px 5px;
     margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 100vh;
+    flex: 1;
 }
 .package-img{
     width: 85%;
@@ -213,6 +229,7 @@ nav a {
     background-color: #150578;
     border-radius: 5px 5px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 .col-package-active:hover{
     /* background-color: #250eba; */
@@ -391,6 +408,7 @@ footer div{
 .p-box{
     margin: 20px;
     flex-direction: column;
+    min-height: 100vh;
     padding: 20px;
     background-color: #e5ecf1;
     border-radius: 5px 5px;
