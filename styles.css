@@ -788,6 +788,13 @@ footer div{
     background-color: #78C0E0;
   }
 
+
+ .card{
+    margin: 20px;
+ }
+ .card-text-justify {
+    text-align: justify;
+ }
   /* End of TOP Button */
 
   /* Testing Section */
