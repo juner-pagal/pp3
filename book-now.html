@@ -53,10 +53,9 @@
       <div class="row">
         <h1 class="display-5">BOOK NOW!</h1>
       </div>
-      <div class="row">
-        <div class="col-md-3"></div>
-        <div class="col-md-6">
         <form class="book-now-form" action="book-now-action.php">
+          <div class="row">
+          <div class="col-md-6">
             <label for="first-name">Name: </label>
                 <div class="input-group">
                     <span class="input-group-text">First Name</span>
@@ -90,7 +89,11 @@
                     <input type="email" id="email" name="email" required>
                 </div>
             </div>
-            <label for="select-service">Book a Service</label>
+          </div>
+
+          <div class="col-md-6">
+            
+            <label for="select-service" class="book-label">Book a Service</label>
             <div class="form-element-wrapper">
                 <select>
                     <option value="website-creation">Website Creation and Maintenance</option>
@@ -109,15 +112,14 @@
             </div>
             <label for="book-message">Type your message here</label>
             <div class="form-element-wrapper">
-                <textarea name="book-message" id="book-message" cols="30" rows="10"></textarea>
+                <textarea name="book-message" id="book-message" cols="30" rows="11"></textarea>
             </div>
             <div class="form-element-wrapper">
                 <input class="link-btn" type="submit" value="Submit">
             </div>
-        </form>
+          </div>
         </div>
-        <div class="col-md-3"></div>
-      </div>
+      </form>
     </div> <!--End of container-->
     
     <div class="main-container">
