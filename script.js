@@ -30,43 +30,43 @@ navLinkEls.forEach(navLinkEl => {
 });
 
 //Designing Review section
-// const url = 'https://local-business-data.p.rapidapi.com/business-reviews?business_id=0x89c259b5a9bd152b%3A0x31453e62a3be9f76&limit=5&sort_by=most_relevant&region=us&language=en';
-// const options = {
-// 	method: 'GET',
-// 	headers: {
-// 		'x-rapidapi-key': '417df4c886mshbe149c863baf4c7p18bfaajsna5a4dacc9762',
-// 		'x-rapidapi-host': 'local-business-data.p.rapidapi.com'
-// 	}
-// };
+const url = 'https://local-business-data.p.rapidapi.com/business-reviews?business_id=0x89c259b5a9bd152b%3A0x31453e62a3be9f76&limit=5&sort_by=most_relevant&region=us&language=en';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': '417df4c886mshbe149c863baf4c7p18bfaajsna5a4dacc9762',
+		'x-rapidapi-host': 'local-business-data.p.rapidapi.com'
+	}
+};
 
 
-// let list;
+let list;
 
-// let all  = document.getElementById('review');
-// //asynch operation = promise
+let all  = document.getElementById('review');
+//asynch operation = promise
 
-// fetch(url, options).then(response => response.json())
-// .then(response => {
-//     console.log(response.data);
-//     list = response.data;
+fetch(url, options).then(response => response.json())
+.then(response => {
+    console.log(response.data);
+    list = response.data;
 
 
-// let reviewRow = document.createElement('div');
-// reviewRow.classList.add('row');
+let reviewRow = document.createElement('div');
+reviewRow.classList.add('row');
 
-//     list.forEach((item) => {
-//        let b = document.createElement('div');
-//        b.classList.add('card');
-//        b.innerHTML = `
-//                 <div class="card-body">
-//                     <h5 class="card-title">${item.author_name}</h5>
-//                     <p class="card-text card-text-justify"> ${item.review_text}</p>
-//                 </div>
-//            `
-//          all.append(reviewRow);
-//          reviewRow.appendChild(b);
-//     })
-// })
+    list.forEach((item) => {
+       let b = document.createElement('div');
+       b.classList.add('card');
+       b.innerHTML = `
+                <div class="card-body">
+                    <h5 class="card-title">${item.author_name}</h5>
+                    <p class="card-text card-text-justify"> ${item.review_text}</p>
+                </div>
+           `
+         all.append(reviewRow);
+         reviewRow.appendChild(b);
+    })
+})
 
 //End of Review Section
     
